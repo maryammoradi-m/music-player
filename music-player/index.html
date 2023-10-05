@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class="ion-navicon"></i>
+                </div>
+                <div class="circle">
+                    <i class="ion-chevron-left"></i>
+
+                </div>
+            </nav>
+            <img src="img/cover.jpg" alt="" class="song-image">
+            <h1>music</h1>
+            <p>no name</p>
+            <audio id="song">
+                <source src="music/035-avaion-sleepless.mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress">
+            <div class="controls">
+                <div><i class="ion-ios-rewind"></i></div>
+                <div onclick="playPause()"><i class="ion-play" id="ctrlIcon"></i></div>
+                <div><i class="ion-ios-fastforward"></i></div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
